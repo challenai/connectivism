@@ -24,6 +24,8 @@ function DraggableBox({ x, y, title, content }) {
         width={240}
         cursor="grabbing"
         className="box"
+        position="absolute"
+        backgroundColor="#fff"
         // onClick={() => alert("Works just like expected")}
       >
         <Heading marginBottom={8}>{title}</Heading>
