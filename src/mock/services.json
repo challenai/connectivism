@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "title": "Service:User",
+      "desc": "用户服务实现了用户CRUD相关的逻辑",
+      "children": [
+        {
+          "title": "GetUserByID",
+          "desc": "根据用户id获取用户信息",
+          "args": "id",
+          "result": "User"
+        },
+        {
+          "title": "CreateUserByPhoneNum",
+          "desc": "使用手机号创建用户",
+          "args": "phone_num",
+          "result": "User"
+        },
+        {
+          "title": "DeleteUser",
+          "desc": "删除用户",
+          "args": "id",
+          "result": "0, 1"
+        }
+      ]
+    },
+    {
+      "title": "Service:Article",
+      "desc": "专栏服务实现了基本的专栏相关业务",
+      "children": [
+        {
+          "title": "GetArticleByID",
+          "desc": "根据专栏id获取专栏信息",
+          "args": "id",
+          "result": "Article"
+        },
+        {
+          "title": "DeleteArticle",
+          "desc": "删除专栏",
+          "args": "id",
+          "result": "0, 1"
+        }
+      ]
+    }
+  ]
+}

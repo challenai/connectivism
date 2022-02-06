@@ -1,18 +1,15 @@
 import React from "react";
 import Draggable from "react-draggable";
-import { Heading, Pane, Text } from "evergreen-ui";
+import { Heading, Pane, Text, Li, Ul, Popover, Strong } from "evergreen-ui";
 import "./DraggableBox.css";
 
-function DraggableBox({ x, y, title, content }) {
+function DraggableBox({ x, y, content }) {
   return (
     <Draggable
       // handle=".handle"
       defaultPosition={{ x, y }}
       position={null}
       scale={1}
-      // onStart={this.handleStart}
-      // onDrag={this.handleDrag}
-      // onStop={this.handleStop}
     >
       <Pane
         is="section"
@@ -26,10 +23,8 @@ function DraggableBox({ x, y, title, content }) {
         className="box"
         position="absolute"
         backgroundColor="#fff"
-        // onClick={() => alert("Works just like expected")}
       >
-        <Heading marginBottom={8}>{title}</Heading>
-        <Text>{content}</Text>
+        {content}
       </Pane>
     </Draggable>
   );
